@@ -167,7 +167,7 @@ C<readdir>, and C<readlink>.
 
 use Encode ();
 use PerlIO::utf8_strict;
-
+utf8::decode($0);# perlscirptname $0
 our $UTF8_CHECK = Encode::FB_CROAK | Encode::LEAVE_SRC; # Die on encoding errors
 
 # UTF-8 Encoding object
